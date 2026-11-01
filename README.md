@@ -1,7 +1,19 @@
 # Smash Yard
 
-Fictional restaurant landing page concept for Artyom's freelance portfolio. Built with AI assistance. No real venue, bookings, payments, or food orders. Menu and prices are illustrative. Contact action opens an email to the developer.
+A fictional burger restaurant website built with React and Vite.
 
-Static, dependency-free HTML/CSS/JavaScript in `dist/`. Portable to static hosting, including Vercel. Run `python -m http.server 4173 --directory dist` from this folder for local preview. Fonts load from Google Fonts, with system fallbacks.
+## Development
 
-Includes responsive layouts, accessible menu filters, anchored navigation, reduced-motion support, and explicit concept labelling. Food image generated using the built-in image generation tool; see `image-prompt.txt`.
+Run `npm ci`, then `npm run dev`. Use `npm run build` for production and `npm run preview` to preview the build. Opening index.html directly is not supported.
+
+## Features
+
+Five routes: home, searchable menu, burger builder, story, and visit/FAQ. Category and vegetarian filters, ingredient dialogs, live builder pricing and explicit localStorage saving. Responsive navigation and reduced-motion support.
+
+No orders, payments, reservations, accounts or server-side data collection. Restaurant details and prices are illustrative. Food photography is generated imagery. Google Fonts load externally with system-font fallbacks.
+
+## Deployment
+
+Import into Vercel with the Vite preset. Build: `npm run build`. Output: `dist`. The included vercel.json supports direct navigation to client-side routes.
+
+Menu data: src/menu.js. Components: src/main.jsx. Styles: src/style.css. Images: public/assets.
